@@ -10,7 +10,7 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $projects = Project::where('user_id', auth()->user()->id)->get();
+        $projects = Project::paginate(5);
         return response()->json($projects);
     }
 }
