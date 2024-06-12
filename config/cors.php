@@ -20,6 +20,8 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => ['*'],
+    // [env('APP_FRONTEND_URL', '*')],
+    // Quella di sopra è la soluzione proposta da Gianluca, che però ci ha detto anche che, lavorando in localhost, possiamo inserire o il localhost o l'*. E' utile per evitare attachi Ddos. 
 
     'allowed_origins_patterns' => [],
 
