@@ -21,9 +21,9 @@
 
                     <!-- Aggiungi i collegamenti qui -->
                     <div class="mt-4">
-                        <a href="{{ route('projects.create') }}" class="btn btn-primary">Create Project</a>
-                        <a href="{{ route('projects.index') }}" class="btn btn-secondary">View Projects</a>
-                        <a href="{{ route('profile.edit') }}" class="btn btn-info">Update Profile</a>
+                        <a href="{{ route('projects.create') }}" class="btn btn-outline-primary">Create Project</a>
+                        <a href="{{ route('projects.index') }}" class="btn btn-outline-primary">View Projects</a>
+                        <a href="{{ route('profile.edit') }}" class="btn btn-outline-primary">Update Profile</a>
                         <form action="{{ route('profile.destroy') }}" method="POST" style="display: inline-block;">
                             @csrf
                             @method('DELETE')
